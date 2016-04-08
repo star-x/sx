@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+     
+		<script src="js/mui.min.js"></script>
+	    <link href="css/style.css" rel="stylesheet"/>
+	    <link rel="stylesheet" href="css/iconfont.css">
+	    <link href="css/app.css" rel="stylesheet"/>
+	    <link href="css/mui.min.css" rel="stylesheet"/>
+	    <script type="text/javascript" charset="utf-8">
+	      	mui.init();
+	    </script>
+		<style>
+			.mui-card .mui-control-content {
+				
+			}
+			.mui-control-content {
+				
+			}
+			.mui-scroll-wrapper{overflow:inherit;}
+			.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+			    color: #ff6633;
+			    border-bottom: 2px solid #ff6633;
+			}
+			header{background-color: #37BF03!important;}
+	    	header a{color: white!important;}
+	    	header h1{color: white!important;}
+	    	li{list-style: none; }
+	    	.mui-content{}
+	    	
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"><span style="font-size: 17px;">返回</span></a>
+		<h1 class="mui-title">心意卡</h1>
+		<a class="mui-btn mui-btn-blue mui-btn-link mui-pull-right"><span class="iconfont icon-zhuye" style="font-size: 25px;"></span></a>
+	</header>
+		<div class="mui-content">
+			<div >
+				<div id="segmentedControl" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-primary" style="background-color: white;">
+					<a class="mui-control-item mui-active" href="#item1">
+						最新
+					</a>
+					<a class="mui-control-item" href="#item2">
+						人气
+					</a>
+					<a class="mui-control-item" href="#item3">
+						销量
+					</a>
+					
+				</div>
+			</div>
+			<div>
+				<div id="item1" class="mui-control-content mui-active">
+					<div id="scroll" class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							
+					       <div class="mui-content" style="background-color: white; padding:5px 0 10px 0; overflow: hidden;">
+					       		<div class="mui-content-padded">
+					       			<div style="width: 25%; float: left; height: 80px; ">
+										<img src="img/xyk1.png" width="100%" height="100%" style="border-radius:5px; "/>
+									</div>
+									<div style=" float: left; padding-left: 10px; height: 80px;">
+										<li style="font-size: 15px;">心意卡</li>
+										<li style="font-size: 12px; color: red;">&nbsp;</li>
+										<li>规格:1张</li>
+										<li style="font-size: 15px; color:#ed3217;">￥：50</li>
+										
+									</div>
+									<div style=" float: right; text-align: right; padding-top: 58px; color: red;">
+										<span style="padding-left:15px ;"> <img src="img/thlh1.png" width="30px"/></span>
+									</div>
+					       		</div>
+					       </div>
+					       <div class="mui-content" style="background-color: white; padding:5px 0 10px 0; overflow: hidden; margin-top: 5px;">
+					       		<div class="mui-content-padded">
+					       			<div style="width: 25%; float: left; height: 80px; ">
+										<img src="img/xyk1.png" width="100%" height="100%" style="border-radius:5px; "/>
+									</div>
+									<div style=" float: left; padding-left: 10px; height: 80px;">
+										<li style="font-size: 15px;">心意卡</li>
+										<li style="font-size: 12px; color: red;">&nbsp;</li>
+										<li>规格:1张</li>
+										<li style="font-size: 15px; color:#ed3217;">￥：50</li>
+										
+									</div>
+									<div style=" float: right; text-align: right; padding-top: 58px; color: red;">
+										<span style="padding-left:15px ;"> <img src="img/thlh1.png" width="30px"/></span>
+									</div>
+					       		</div>
+					       </div>
+						</div>
+						
+					</div>
+				</div>
+				<div id="item2" class="mui-control-content">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							第二个选项卡子项-1
+						</li>
+						<li class="mui-table-view-cell">
+							第二个选项卡子项-2
+						</li>
+						<li class="mui-table-view-cell">
+							第二个选项卡子项-3
+						</li>
+					</ul>
+				</div>
+				<div id="item3" class="mui-control-content">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							哈哈
+						</li>
+						
+					</ul>
+				</div>
+				
+				
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		
+
+	</body>
+
+</html>

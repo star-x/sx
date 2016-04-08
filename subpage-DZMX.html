@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/iconfont.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+    <style>*{margin:;padding:0}
+    	a{display:block;text-decoration: none;}
+    	body{background-color:#d4d4d4;}
+    	/*开始*/
+    	.centerbox{width:95%;margin:auto;}
+    	.topbox{height:50px;}
+    	.topbox{background-color: #37bf03;overflow:hidden;}
+    	.topbox a{float:left;color:white;margin-top:15px;font-size: 18px;}
+    	.topbox img{float:right;width: 30px;line-height: 30px;margin-top:10px}
+    	.mui-input-row{background-color:white;margin-top:1px;}
+    	header{background-color: #37BF03!important;}
+    	header a{color: white!important;}
+    	header h1{color: white!important;}
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"><span style="font-size: 17px;">返回</span></a>
+		<h1 class="mui-title"></h1>
+		<a class="mui-btn mui-btn-blue mui-btn-link mui-pull-right"><span class="iconfont icon-zhuye" style="font-size: 25px;"></span></a>
+	</header>
+	<div class="mui-input-row" style="margin-top:45px; ">
+		<label>所在地区</label>
+		<input type="text" placeholder="郑州">
+	</div>
+	<div class="mui-input-row">
+		<label>收货时间</label>
+		<input type="text" class="mui-input-clear" placeholder="18：00——20：00">
+	</div>
+	<div class="mui-input-row">
+		<label>详细地址</label>
+		<input type="text" class="mui-input-clear" placeholder="商都路街道123号">
+	</div>
+	<div class="mui-input-row">
+		<label>姓名</label>
+		<input type="text" class="mui-input-clear" placeholder="张三">
+	</div>
+	<div class="mui-input-row" style="background-color:white;">
+		<label>手机号码</label>
+		<input type="text" class="mui-input-clear" placeholder="15236987412">
+	</div>
+	<div class="mui-input-row mui-checkbox mui-left" style="background-color:white;">
+		<label>设为默认地址</label>
+		<input name="checkbox" value="Item 2" type="checkbox" checked>
+	</div>
+	<div class="button">
+		<button type="button" class="mui-btn mui-btn-primary" onclick="return false;" style="background-color:#37bf03;width:100%;margin-top:20px;">保存</button>&nbsp;&nbsp;
+	</div>
+</body>
+</html>

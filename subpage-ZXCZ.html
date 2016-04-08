@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+     <link href="css/iconfont.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+    <style>
+    	/*重置所有项*/
+    	*{margin:0;padding:0}
+    	a{display:block;text-decoration: none;}
+    	body{background-color:#d4d4d4;}
+    	/*开始*/
+    	.centerbox{width:95%;margin:auto;}
+    	.topbox{height:50px;}
+    	.topbox{background-color: #37bf03;overflow:hidden;}
+    	.topbox a{float:left;color:white;margin-top:15px;font-size: 18px;}
+    	.topbox img{float:right;width: 30px;line-height: 30px;margin-top:10px}
+    	.text{background-color: white;color:black;overflow:hidden;}
+    	.text a{float:left;color:black;font-size: 16px;line-height: 40px;;}
+    	.sumbox{background-color:white;overflow: hidden;;}
+    	.sum{border-radius:5px;background-color:#f15b11;width:80%;text-align: center;line-height: 30px;color:white}
+    	.ratebox a{width: 33%;float: left;margin-top:30px;color:black;"}
+    	   
+        input[type="radio"]{
+        	-webkit-appearance: none;
+        	width: 20px;
+        	height: 20px;
+        	border:#37BF03 solid 1px ;
+        	background-size:100% 100% ;
+        	border-radius: 50%;
+        	
+        }
+        input[type="radio"]:checked{
+        	-webkit-appearance: none;
+        	width: 20px;
+        	height: 20px;
+        	border-radius: 50%;
+        	background-image:url(img/zf3.png) ;
+        	background-repeat:no-repeat ;
+        	background-size:100% 100% ;
+        }
+                input[type="button"]{width: 80%;  border-radius:8px ; height:40px; border: none; background-color:#37BF03 ; color: white;}
+        
+        div{min-height:0; overflow: hidden;}
+        header{background-color: #37BF03!important;}
+    	header a{color: white!important;}
+    	header h1{color: white!important;}
+    	ul{padding: 0; margin: 0;}
+    	li{list-style: none; min-height: 0; }
+    	.mui-content{ background-color: white; }
+    	.a span:first-child {margin-right: 5%;}
+    	.b{min-height: 40px!important; max-height:80px;  }
+    	.b  div:first-child{ float:left;  width:15% ; }
+    	.b  div:last-child{  float:left; width:85% ;}
+    	
+    	header{background-color: #37BF03!important;}
+    	header a{color: white!important;}
+    	header h1{color: white!important;}
+    	
+   
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav" style="background-color:#37bf03;">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color:white;font-size:18px;margin-top:4px;">  在线充值</a>
+		
+	    <a class="mui-btn mui-btn-blue mui-btn-link mui-pull-right"><span class="iconfont icon-zhuye" style="font-size: 25px;"></span></a>
+	</header>
+	<div class="text" style="margin-top: 44px;">
+		<a>您的当前余额为：</a>
+		<a style="color:#d67900">100</a>
+		<a>元</a>
+	</div>
+	<div class="bannerbox">
+			<img src="img/banner2.png" style="width:100%">
+	</div>
+	<div class="sumbox">
+		<div class="centerbox">
+			<div class="sum">请选择充值的金额：     20元</div>	
+			<div class="ratebox">
+				<a>20元</a>
+				<a>30元</a>
+				<a>50元</a>
+				<a>100元</a>
+				<a>200元</a>
+				<a>300元</a>
+			</div>
+		</div>
+	</div>
+	<div class="mui-content" style="margin-top: 10px; padding: 0; ">
+		<div class="mui-content-padded a" style="margin-bottom: 3px; background-color: #f15b11;width:60%;border-radius: 5px;text-align: center;">
+			<span style="color:white;line-height: 40px;">请选择充值方式：</span>
+		</div>
+		<hr style="border: none; border-bottom: #BBBBBB solid 1px; padding: 0; margin: 0;" />
+		<div class="mui-content-padded b">
+			<div >
+				<img src="img/weixin.png" width="100%"/>
+			</div>
+			<div style="padding-left: 10px; padding-top:5px ;" >
+				<ul>
+					<li>微信支付</li>
+					<li style="font-size: 12px;">
+						<div style="float:left ; width: inherit;">推荐微信5.0及其以上版本使用</div> 
+						<div style="float:right ; width: inherit;"><input type="radio" name="pay" id="" value="" /></div>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		<hr style="border: none; border-bottom: #BBBBBB solid 1px; padding: 0; margin: 0;" />
+		<div class="mui-content-padded b">
+			<div >
+				<img src="img/pic16.png" width="100%"/>
+			</div>
+			<div style="padding-left: 10px; padding-top:5px ;" >
+				<ul>
+					<li>微信支付</li>
+					<li style="font-size: 12px;">
+						<div style="float:left ; width: inherit;">推荐微信5.0及其以上版本使用</div> 
+						<div style="float:right ; width: inherit;"><input type="radio" name="pay" id="" value="" /></div>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+	<div style="margin-top:20px!important;background-color:#f15b11;text-align: center;border-radius: 5px;width:85%;margin:auto;line-height: 30px;">
+		立即支付：19.88
+	</div>	
+					
+
+</body>
+</html>

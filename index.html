@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init();
+    </script>
+    <style type="text/css">
+        
+    	header{background-color: #37BF03!important;}
+    	header a{color: white!important;}
+    	header h1{color: white!important;}
+    	.a{margin-top: 10px; background-color: white; overflow: hidden; padding: 5px; padding-top: 10px;}
+    	.a ul{padding: 0; margin: 0;}
+    	.a ul li{list-style: none; float: left; width: 25%; text-align: center;}
+    	.a ul li div:first-child{ width:50px ; height: 50px; margin: auto; border-radius:50% ; padding-top:5px ;}
+    	.a ul li div:first-child img{width: 75%; height: 75%; }
+    	.a ul li div:last-child {font-size: 15px; }
+    	.b{background-color: white; overflow: hidden; margin-top: 5px; padding: 10px  1%;}
+    	.b ul{padding:10px 5%; }
+    	.b ul li{list-style: none; width: 47%; }
+    	.b ul li:nth-of-type(2n-1){float: left;}
+    	.b ul li:nth-of-type(2n){float: right;}
+    	.c{background-color: white; overflow: hidden; margin-top: 5px; padding: 10px  1%;}
+    	.c ul{padding:0px 1%; margin-top: 5px;}
+    	.c ul li{list-style: none; width: 30%; float: left; text-align: center; font-size: 12px;}
+    	.c ul li:nth-of-type(2n-1){}
+    	.c ul li:nth-of-type(2n){margin: 0 5%;}
+    	
+    </style>
+</head>
+<body>
+    <header class="mui-bar mui-bar-nav" style="padding-top:8px ;">
+		<div style="float: left;">
+		    logo	
+		</div>
+		<div  style="text-align:center;  height: 30px; border:white solid 1px ; width: 80%; float: right;">
+			<input type="text"  placeholder="请输入关键字" style="width:80%;  float: left; border:none ; height:30px; background-color:inherit; color:white;"/>
+			<div style="float: right; background-color:white ; color:black; width: 20%; line-height:29px;">搜索</div>	
+		</div>
+		
+
+	</header>
+	<div class="mui-content">
+		<!--
+                            	开始轮播
+                            -->
+					         <div id="slider" class="mui-slider" style="height:180px; " >
+								<div class="mui-slider-group mui-slider-loop">
+									<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+									<div class="mui-slider-item mui-slider-item-duplicate">
+										<a href="#">
+											<img src="img/yuantiao.jpg">
+										</a>
+									</div>
+									<!-- 第一张 -->
+									<div class="mui-slider-item">
+										<a href="#">
+											<img src="img/shuijiao.jpg">
+										</a>
+									</div>
+									<!-- 第二张 -->
+									<div class="mui-slider-item">
+										<a href="#">
+											<img src="img/muwu.jpg">
+										</a>
+									</div>
+									<!-- 第三张 -->
+									<div class="mui-slider-item">
+										<a href="#">
+											<img src="img/shuijiao.jpg">
+										</a>
+									</div>
+									<!-- 第四张 -->
+									<div class="mui-slider-item">
+										<a href="#">
+											<img src="img/yuantiao.jpg">
+										</a>
+									</div>
+									<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+									<div class="mui-slider-item mui-slider-item-duplicate">
+										<a href="#">
+											<img src="img/shuijiao.jpg">
+										</a>
+									</div>
+								</div>
+								<div class="mui-slider-indicator">
+									<div class="mui-indicator mui-active"></div>
+									<div class="mui-indicator"></div>
+									<div class="mui-indicator"></div>
+									<div class="mui-indicator"></div>
+								</div>
+							</div>
+							<script src="../js/mui.min.js"></script>
+							<script type="text/javascript" charset="utf-8">
+								var slider = mui("#slider");
+									slider.slider({
+											interval: 1000
+										});
+							</script>
+							<!--
+					        	结束轮播
+					        -->
+					        
+					        
+					        
+					        
+					    <div class="a">
+					    	<ul>
+					    		<li>
+					    			<div style="background-color: #30d216;">
+					    				<img src="img/index1.png"/>
+					    			</div>
+					    			<div>
+					    				最热蔬菜
+					    			</div>
+					    		</li>
+					    		<li>
+					    			<div style="background-color: #0bca72;">
+					    				<img src="img/index2.png"/>
+					    			</div>
+					    			<div>
+					    				心意卡
+					    			</div>
+					    		</li>
+					    		<li>
+					    			<div style="background-color: #898cff;">
+					    				<img src="img/index3.png"/>
+					    			</div>
+					    			<div>
+					    				礼盒特惠
+					    			</div>
+					    		</li>
+					    		<li>
+					    			<div style="background-color: #ff4b4b;">
+					    				<img src="img/index4.png"/>
+					    			</div>
+					    			<div>
+					    				促销
+					    			</div>
+					    		</li>
+					    		
+					    	</ul>
+					    </div>   
+					    
+					    
+					    
+					     <div class="b">
+					     	<span style=" float: left;">
+					     		<img src="img/index_heart.png" width="20px" style="margin-right: 2px;"/>猜你喜欢
+					     	</span>
+					     	<span style="font-size: 12px; float: left; padding-left: 10px;">
+					     		公告：最热蔬菜上架，限时抢购
+					     	</span>
+					    	<ul>
+					    		<li>
+					    			<img src="img/index5.png" width="100%"/>
+					    		</li>
+					    		<li>
+					    			<img src="img/index5.png" width="100%"/>
+					    		</li>
+					    		
+					    	</ul>
+					    </div>
+					    
+					     <div class="c">
+					     	<div style="padding:0 1%; border-bottom: black solid 1px; overflow: hidden;">
+					     		<span style="font-size: 12px; float: left;">
+					     		        最热蔬菜
+						     	</span>
+						     	<span style="font-size: 12px; float: right; ">
+						     		更多+
+						     	</span>
+					     		
+					     	</div>
+					     	
+					    	<ul>
+					    		
+					    		<li>
+					    			<div><img src="img/index5.png" width="100%"/></div>
+					    			<div >新西兰花<br><span style="position: relative; top:-6px">￥3.5</span></div>
+					    		</li>
+					    		<li>
+					    			<div><img src="img/index6.png" width="100%"/></div>
+					    			<div >新西兰花<br><span style="position: relative; top:-6px">￥3.5</span></div>
+					    		</li>
+					    		<li>
+					    			<div><img src="img/index5.png" width="100%"/></div>
+					    			<div >新西兰花<br><span style="position: relative; top:-6px">￥3.5</span></div>
+					    		</li>
+					    		
+					    		
+					    	</ul>
+					    </div>
+	</div>
+	
+</body>
+</html>

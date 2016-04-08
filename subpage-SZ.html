@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+     <link href="css/iconfont.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+    <style>
+    	body{background-color:#d4d4d4;}
+    	/*开始*/
+    	.centerbox{width:95%;margin:auto;} .;
+    	.topbox{height:50px;}
+    	.topbox{background-color: #37bf03;overflow:hidden;}
+    	.topbox a{float:left;color:white;margin-top:15px;font-size: 18px;}
+    	.topbox img{float:right;width: 30px;line-height: 30px;margin-top:10px}
+    	.bannerbox{background-color:#bec388;overflow:hidden;}
+    	.button-bottom{background-color:#fc8728;font-weight:bold;font-size:24px;line-height:40px;text-align:center;
+    	color:white;margin-top:20px;width: 85%;margin-left:auto;margin-right: auto;}
+        header{background-color: #37BF03!important;}
+    	header a{color: white!important;}
+    	header h1{color: white!important;}
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"><span style="font-size: 17px;">返回</span></a>
+		<h1 class="mui-title">个人中心</h1>
+		<a class="mui-btn mui-btn-blue mui-btn-link mui-pull-right"><span class="iconfont icon-zhuye" style="font-size: 25px;"></span></a>
+	</header>
+	<div class="bannerbox" style="margin-top: 45px;">
+		<div class="centerbox">
+			<div class="banner">
+				<div style="float:left; width: 30%;margin-left:30%"><img src="img/pic20.png" style="width: 100%;height:100%;"></div>
+				<div style="clear: left;margin-left:36%">笙ぃ澈</div>
+			</div>
+		</div>
+	</div>
+	<ul class="mui-table-view mui-table-view-chevron " id="perentMyInfo">
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right" href="javascript:mui.openWindow('buyList.html');">
+								修改密码
+							</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right" href="javascript:mui.openWindow('auctionRemind.html');">
+								账户信息修改
+							</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right" href="javascript:mui.openWindow('applyWithdrawals.html');">
+							我的收藏
+							</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right" href="javascript:mui.openWindow('receiptAddress.html');">
+								版本号
+							</a>
+					</li>
+				</ul>
+				<ul class="mui-table-view mui-table-view-chevron divCss15"  id="divPerent">
+					<li class="mui-table-view-cell" onclick="isMerchant();">
+						<a class="mui-navigate-right " id="isCheckedMerchant" >
+								预存款消费记录
+							</a>
+					</li>
+					<li class="mui-table-view-cell " id="myvrih">
+						<a class="mui-navigate-right ">
+								配送说明
+							</a>
+					</li>
+					<li class="mui-table-view-cell ">
+						<a class="mui-navigate-right " id="goIsTreasure">
+								24小时退换货
+							</a>
+					</li>
+				</ul>
+				<div class="button-bottom">
+					<div class="centerbox">
+						<div>退  出  当  前  账  户</div>
+					</div>
+				</div>
+</body>
+</html>

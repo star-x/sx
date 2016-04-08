@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/receiptAddress.css"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+    <style type="text/css">
+    	.dzgl-box {
+	width: 93%;
+	margin: 0 auto;
+}
+.dzgl-head {
+	width: 100%;
+	background-color: white;
+	min-height: 1rem;
+	overflow: auto;
+	zoom: 1;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	margin-top: 0.5rem;
+	margin-bottom: 1px;
+}
+.dzgl-head-left {
+	float: left;
+}
+.dzgl-head-right {
+	float: left;
+	color: #3d98ff;
+}
+.dzgl-content {
+	width: 100%;
+	background-color: white;
+	min-height: 0.5rem;
+	overflow: auto;
+	zoom: 1;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+.dzgl-content li {
+	list-style: none;
+	line-height: 1.5rem;
+}
+.dzgl-content-txta {
+	float: right;
+	color: #B3B3B3;
+}
+.dzgl-content-txtb {
+	float: right;
+	color: #B3B3B3;
+}
+.addressedit {
+	margin-top: 5px;
+}
+.addressedit li {
+	list-style: none;
+	line-height: 3.5rem;
+	border-bottom: #F1F1F1 1px solid;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.xgdz-content1 {
+	margin-top: 0.5rem;
+	background-color: white;
+}
+.xgdz-content1-2 {
+	width: 95%;
+	margin: auto;
+}
+.xgdz-content1-2 li {
+	list-style: none;
+	line-height: 5rem;
+	border-bottom: #F1F1F1 1px solid;
+}
+#xgdz-content1-checkbox {
+	display: block;
+	margin-right: 0.5rem;
+	float: left;
+	outline: none;
+	margin-top: 2rem;
+}
+#selection {
+	border: none;
+	font-family: "Microsoft YaHei UI";
+	font-size: 2rem;
+	width: auto;
+	height: auto;
+	margin-top: 0.5rem;
+	;
+	padding: 0;
+	font-size: 1rem;
+	float: right;
+	border: none;
+}
+.xgdz_foot_bton {
+	width: 90%;
+	height: 4rem;
+	font-family: "Microsoft YaHei UI";
+	font-size: 1rem;
+	background-color: #3C98FF;
+	color: white;
+	border: none;
+	border-radius: 0.3rem;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav" style="background-color: #37bf03;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color: white;"></a>
+			<h1 class="mui-title" style="color: white;">收货地址管理</h1>
+	</header>
+		<div class="mui-content">
+			<a href="#addressedit">
+				<div class="dzgl-head">
+					<a href="javascript:mui.openWindow('updateAddress.html')">
+						<div class="dzgl-box">
+						<div class="dzgl-head-left"><img src="img/addressadd.png" width="70%"></div>
+						<div class="dzgl-head-right" style="color:#000000; ">新增收货地址</div>
+						</div>
+					</a>	
+				</div>
+			</a>
+
+			<div style="background-color:white;" id="addresslist">
+				<div id="">
+					<div class="dzgl-content">
+						<div class="dzgl-box" >
+							<li style="color: #989898;">张三&nbsp;15565520582&nbsp;&nbsp;<span style="color:#b53331;font-size:12px;">收货时间：18：00~20：00</span></li>
+							<li style="color:#b53331 ;">[默认]&nbsp;&nbsp;&nbsp;<span style="color:#B3B3B3;">河南省郑州市管城区御玺大厦郑州市</span></li>
+							<div class="dzgl-content-txt">
+								<div class="dzgl-content-txtb"><span><img src="img/addressdelete.png" width="13px"></span><span>删除</span></div>
+								<div class="dzgl-content-txta"><span><img src="img/addressedit.png" width="13px" onclick="mui.openWindow('updateAddress.html')"></span><span>编辑</span></div>
+							</div>
+							<div style="clear:both;"></div>
+						</div>
+					</div>
+					<div class="dzgl-box" style=" border-top:#E7E7E7 solid 1px;"></div>
+				</div>
+				
+			</div>
+			<div id="order2">
+			</div>
+		</div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+    <style type="text/css">
+        input[type="checkbox"]{
+        	-webkit-appearance: none;
+        	width: 20px;
+        	height: 20px;
+        	background-image:url(img/heart1.png) ;
+        	background-repeat:no-repeat ;
+        	background-size:100% 100% ;
+        	border-radius: 50%;
+        	
+        }
+        input[type="checkbox"]:checked{
+        	-webkit-appearance: none;
+        	width: 20px;
+        	height: 20px;
+        	border-radius: 50%;
+        	background-image:url(img/heart2.png) ;
+        	background-repeat:no-repeat ;
+        	background-size:100% 100% ;
+        }
+        
+        div{min-height:0; overflow: hidden;}
+        header{background-color: #37BF03!important;}
+    	header a{color: white!important;}
+    	header h1{color: white!important;}
+    	ul{padding: 0; margin: 0;}
+    	li{list-style: none; min-height: 0; }
+    	.mui-content{ background-color: white; }
+    	.a {padding-bottom: 20px;}
+    	.a li{}
+    	.a_child1{width: 50%; float: left;}
+    	.a_child1 li:nth-of-type(1){font-size: 12px; color: red;}
+    	.a_child1 li:nth-of-type(2){color: red;}
+    	.a_child2{width: 50%; float: right; text-align:right ; padding-top: 30px;}
+    	
+    	
+    	.mui-numbox{border-radius:0 ;}
+    	.b{  padding:10px 5px ;  color:#37BF03;}
+    	.b div{float: left; }
+    	.b div:nth-of-type(1){width: 10%; }
+    	.b div:nth-of-type(2){width: 70%; }
+    	.b div:nth-of-type(3){width: 20%; }
+    	.b div:nth-of-type(2) span{display: block; margin-top: 10px; font-size: 15px; padding-left: 5px; color: black;}
+    	.b div:nth-of-type(3) span{display: block; margin-top: 20px;  color: red; text-align: right;}
+    	footer{position: fixed; bottom: 0;  text-align: center; width: 100%; background-color: #37BF03!important; color: white; }
+        footer li{ float: left;   line-height: 40px; padding: 0!important;  margin: 0!important;}
+        footer li:first-child{width: 50%;background-color:#FF4900 ; }
+        footer li:last-child{width: 50%; background-color:#047201;}
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"><span style="font-size: 17px;">营养青茄</span></a>
+		<h1 class="mui-title">特惠礼盒</h1>
+	</header>
+	<div class="mui-content">
+		<div>
+			<img src="img/spddzsy.png" width="100%"/>
+		</div>
+		<div class="mui-content-padded a">
+			<li>
+				<span  style="float: left;"> 黄秋葵</span>
+				<span style="float: right;"> <input type="checkbox" name="" id="" value="" /></span>				
+			</li><div style="clear: both;"></div>
+			<li>
+				<div class="a_child1">
+					<ul>
+						<li>心意卡用户专享</li>
+						<li>规格：2斤装</li>
+						<li>￥：3：00</li>
+					</ul>
+				</div>	
+				<div class="a_child2">
+					<div class="mui-numbox">
+						<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+						<input class="mui-input-numbox" type="number" />
+						<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+				    </div>
+				</div>
+			</li>
+		</div>
+	</div>
+   
+	<div class="mui-content" style="margin-top:5px; padding-top: 0; ">
+		<div class="mui-content-padded" style="margin-bottom: 3px; ">
+			商品评价
+		</div>
+		<hr style="border: none; border-bottom: #BBBBBB solid 1px; padding: 0; margin: 0;" />
+		<div class="mui-content-padded" style="text-align: center;">
+			暂无评价
+			</div>
+		</div>
+	</div>
+    
+    <footer>
+    	<li>立即抢购</li>
+    	<li>加入购物车</li>
+    </footer>
+</body>
+</html>

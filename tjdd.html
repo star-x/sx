@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+    <style type="text/css">
+        div{min-height: 0; overflow: hidden;}
+        header{background-color: #37BF03!important;}
+    	header a{color: white!important;}
+    	li{list-style: none; margin-top: 10px; background-color: white;}
+    	.a{ border-bottom:darkgray solid 1px; padding:8px 5px ; }
+    	.a div:first-child{float: left; }
+    	.a div:last-child{float: right;}
+    	.mui-numbox{border-radius:0 ;}
+    	.b{  padding:10px 5px ;  color:#37BF03;}
+    	.b div:first-child{float: left; }
+    	.b div:last-child{float: right;}
+    	footer{position: fixed; bottom: 0; line-height: 50px; text-align: center; width: 100%; background-color: #37BF03!important; color: white;}
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"><span style="font-size: 17px;">提交订单</span></a>
+		<h1 class="mui-title"></h1>
+		<a class="mui-btn mui-btn-blue mui-btn-link mui-pull-right">编辑</a>
+	</header>
+	<div class="mui-content">
+		<li>
+			<div class="a">
+				<div style="padding-top: 10px;">
+					蔬菜盒子￥20
+				</div>
+				<div>
+					<div class="mui-numbox">
+						<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+						<input class="mui-input-numbox" type="number" />
+						<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+				    </div>
+				</div>
+			</div>
+			<div class="b">
+				<div >
+					小计
+				</div>
+				<div>
+					￥20
+				</div>
+			</div>
+		</li>
+		<li >
+			<div class="a">
+				<div >
+					心意卡
+				</div>
+				<div>
+					<a style="color:#37BF03 ;"> 使用心意卡<span class="mui-icon mui-icon-arrowright"></span></a>
+				</div>
+			</div>
+			<div class="b">
+				<div >
+					<span style="color:black;">总价</span>
+				</div>
+				<div>
+					￥20
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="a" style=" border: none;">
+				<div >
+					157****5847
+				</div>
+				<div>
+					绑定新手机<span class="mui-icon mui-icon-arrowright"></span>
+				</div>
+			</div>
+		</li>
+	</div>
+    <footer>
+    	提交订单
+    </footer>
+</body>
+</html>
